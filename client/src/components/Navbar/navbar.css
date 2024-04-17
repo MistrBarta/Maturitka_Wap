@@ -14,36 +14,37 @@
     color: white;
 }
 
-.logo {
-    font-size: 30px;
-    text-shadow: 2px 2px 23px #FF0000;
-}
-
 .nav-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     list-style: none;
     width: 75%;
+    text-transform: none;
 }
 
-.home, .skins, .support, .login {
+
+.catpage, .dogpage, .boypage, .girlpage, .homepage {
     text-decoration: none;
     color: white;
     font-size: 20px;
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
-    text-shadow: 2px 2px 23px #FF0000;
 }
 
-.login {
-    border: 1px solid red;
+.catpage:hover, .dogpage:hover, .boypage:hover, .girlpage:hover, .homepage:hover {
+    border: 2px solid white;
     border-radius: 5px;
-    justify-content: center;
 }
 
 .mobile-menu-icon {
     display: none;
+}
+
+@media screen and (max-width: 983px) {
+    .catpage, .dogpage, .boypage, .girlpage, .homepage{
+        font-size: 19px;
+    }
 }
 
 @media screen and (max-width: 955px) {
@@ -52,7 +53,6 @@
         position: absolute;
         top: 15px;
         left: 35px;
-        text-shadow: 2px 2px 23px #FF0000;
     }
 
     .nav-links {
@@ -71,23 +71,18 @@
         height: 100%;
     }
 
-    .home, .skins, .support, .login {
+    .catpage, .dogpage, .boypage, .girlpage, .homepage {
         color: white;
         text-align: center;
         padding: 32px;
         width: 100%;
         transition: all 0.5s ease;
-        text-shadow: 2px 2px 23px #FF0000;
-    }
-
-    .login {
-        border: none;
     }
 
     .mobile-menu-icon {
         display: block;
         position: absolute;
-        font-size: 30px;
+        font-size: 24px;
         color: white;
         background-color: rgb(14, 14, 14);
         border: none;

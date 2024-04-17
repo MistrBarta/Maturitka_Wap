@@ -72,7 +72,7 @@ export default function CatView() {
       <Link to={`/updatecat/${id}`}>
         <p>Update cat</p>
       </Link>
-      <Link to={"/catpage"}>
+      <Link to={"/cats"}>
         <p>Go back</p>
       </Link>
     </>

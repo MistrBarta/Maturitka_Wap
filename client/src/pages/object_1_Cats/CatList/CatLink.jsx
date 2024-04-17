@@ -6,6 +6,9 @@ export default function CatLink(props) {
         <>
             <Link to={`/cat/${props._id}`}>
                 <p>{props.name}</p>
+                <p>{props.legs}</p>
+                <p>{props.color}</p>
+                <p>{props._id}</p>
             </Link>
         </>
     )

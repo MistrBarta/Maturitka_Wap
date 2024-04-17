@@ -1,19 +1,25 @@
 import "../../MainPage/MainPage.css";
 import { Link } from "react-router-dom";
+import "./Page.css";
 
 export default function CatPage() {
   return (
     <>
-      <h1>Cat Page</h1>
+      <div className="tittle-page">
+        <h1>Cat Page</h1>
+      </div>
+      <div className="content-page">
       <Link to={"/createcat"}>
-        <p>Create cat</p>
+        <div className="navigation-page-create">
+          <p>Create cat</p>
+        </div>
       </Link>
       <Link to={"/cats"}>
+        <div className="navigation-page">
         <p>Cats</p>
+        </div>
       </Link>
-      <Link to={"/"}>
-        <p>Back to main page</p>
-      </Link>
+      </div>
     </>
   );
 }

@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { createCat } from "../../../models/Cat";
+import "./CreateForm.css";
 
 export default function CatCreateForm() {
   const [formData, setFormData] = useState();
@@ -31,18 +32,22 @@ export default function CatCreateForm() {
 
   return (
     <>
-      <h1>Cat create form</h1>
-      <form>
-        <input type="text" name="name" required placeholder="Enter cat name" onChange={e => handleChange(e)}/>
-        <input type="number" name="legs" required placeholder="Enter legs" onChange={e => handleChange(e)}/>
-        <input type="text" name="color" required placeholder="Enter color" onChange={e => handleChange(e)}/>
-        <button onClick={handlePost}>
-          Create cat
-        </button>
-      </form>
-      <Link to={"/catpage"}>
-        <p>Go back</p>
-      </Link>
+    <h1>Cat create form</h1>
+      <div className="container">
+        <form className="form-create"> 
+          <input type="text" name="name" required placeholder="Enter cat name" className="input-create" onChange={handleChange}/>
+          <input type="number" name="legs" required placeholder="Enter legs" className="input-create" onChange={handleChange}/>
+          <input type="text" name="color" required placeholder="Enter color" className="input-create" onChange={handleChange}/>
+          <button onClick={handlePost} className="button-create">
+            Create cat
+          </button>
+        </form>
+        <Link to="/catpage" className="link-page">
+          <div className="link-go-back">
+            <p>Go back</p>
+          </div>
+        </Link>
+      </div>
     </>
   );
 }

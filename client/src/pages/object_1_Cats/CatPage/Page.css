@@ -1,0 +1,36 @@
+.tittle-page {
+    text-align: center;
+}
+
+.content-page {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.navigation-page-create {
+    font-size: 20px;
+    color: white;
+    margin: 0 35px;
+}
+
+.navigation-page-create:hover {
+    width: auto;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.navigation-page {
+    font-size: 20px;
+    color: white;
+    margin: 0 35px;
+}
+
+.navigation-page:hover {
+    width: auto;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+

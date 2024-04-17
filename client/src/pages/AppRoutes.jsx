@@ -34,6 +34,7 @@ export default function AppRoutes() {
   return (
     <>
       <BrowserRouter>
+      <Navbar />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/createcat" element={<CatCreateForm />} />
