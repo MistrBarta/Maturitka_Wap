@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+
+.logo {
+    font-size: 30px;
+    text-shadow: 2px 2px 23px #FF0000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+
+.home, .skins, .support, .login {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-shadow: 2px 2px 23px #FF0000;
+}
+
+.login {
+    border: 1px solid red;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 955px) {
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+        text-shadow: 2px 2px 23px #FF0000;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: rgb(14, 14, 14);
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        height: 100%;
+    }
+
+    .home, .skins, .support, .login {
+        color: white;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 23px #FF0000;
+    }
+
+    .login {
+        border: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: rgb(14, 14, 14);
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+    }
+}
