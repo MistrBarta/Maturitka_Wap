@@ -60,37 +60,18 @@ export default function CatUpdateForm() {
   return (
     <>
       <h1>Cat update form</h1>
-      <p>{id}</p>
+      <div className="container-view">
+      <p>ID: {id}</p>
       <form>
-        <input
-          type="text"
-          defaultValue={cat.name}
-          name="name"
-          required
-          placeholder="Enter cat name"
-          onChange={(e) => handleChange(e)}
-        />
-        <input
-          type="number"
-          defaultValue={cat.legs}
-          name="legs"
-          required
-          placeholder="Enter legs"
-          onChange={(e) => handleChange(e)}
-        />
-        <input
-          type="text"
-          defaultValue={cat.color}
-          name="color"
-          required
-          placeholder="Enter color"
-          onChange={(e) => handleChange(e)}
-        />
-        <button onClick={handlePost}>Update cat</button>
+        <input type="text" defaultValue={cat.name} name="name" required placeholder="Enter cat name" onChange={(e) => handleChange(e)}/>
+        <input type="number" defaultValue={cat.legs} name="legs" required placeholder="Enter legs" onChange={(e) => handleChange(e)} />
+        <input type="text" defaultValue={cat.color} name="color" required placeholder="Enter color" onChange={(e) => handleChange(e)}/>
+        <button className="created-button-cat" onClick={handlePost}>Update cat</button>
       </form>
       <Link to={"/catpage"}>
-        <p>Go back</p>
+        <button className="created-button-home" >Go back</button>
       </Link>
+      </div>
     </>
   );
 }

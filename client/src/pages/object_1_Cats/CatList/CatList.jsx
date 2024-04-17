@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import CatLink from "./CatLink";
 import { useState, useEffect } from "react";
 import { getCats } from "../../../models/Cat";
+import "../CatCreateForm/CreateForm.css";
 
 export default function CatList() {
   const [cats, setCats] = useState();
@@ -39,14 +40,15 @@ export default function CatList() {
   return (
     <>
       <h1>Cat list</h1>
+      <Link className="button-catlist-div" to={"/catpage"}>
+        <button className="button-catlist">Go back</button>
+      </Link>
       {
         cats.map((cat, index) => (
           <CatLink key={index} {...cat} />
         ))
       }
-      <Link to={"/catpage"}>
-        <p>Go back</p>
-      </Link>
+      
     </>
   );
 }

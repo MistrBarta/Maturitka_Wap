@@ -82,3 +82,75 @@
     color: white;
     border: 2px solid black;
   }
+
+  .container-view {
+    width: 350px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container p {
+    margin: 10px 0;
+  }
+  
+  form-view {
+    margin-top: 20px;
+  }
+  
+  input {
+    height: 39px;
+    width: calc(100% - 100px);
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  button {
+    height: 42px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+
+  .button-delete-view {
+    background-color: rgb(180, 27, 27);
+    border: 2px solid black;
+  }
+
+  .text-catlist {
+    text-align: center;
+    width: 120px;
+    color: white;
+    padding: 1em;
+    border: 2px solid black;
+  }
+
+  .button-catlist {
+    text-align: center;
+    background-color: rgb(180, 27, 27);
+    border: 2px solid black;
+  }
+
+  .button-catlist-div {
+    text-align: center;
+  }
+
+  .button-catlist-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-catlink {
+   float: left;
+   margin-left: 1em;
+  }

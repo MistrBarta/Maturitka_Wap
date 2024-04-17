@@ -32,7 +32,7 @@ export default function CatView() {
     if (cat.name === formData) {
       const data = await deleteCat(id);
       if (data.status === 200) {
-        navigate("/");
+        navigate("/cats");
       } else {
         setInfo(data.msg);
       }
@@ -60,21 +60,23 @@ export default function CatView() {
   return (
     <>
       <h1>Cat view</h1>
-      <p>{id}</p>
-      <p>{cat.name}</p>
-      <p>{cat.legs}</p>
-      <p>{cat.color}</p>
-      <form>
-        <input type="text" placeholder={cat.name} onChange={handleChange} />
-        <button onClick={handleDelete}>Delete</button>
+      <div className="container-view">
+      <p>ID: {id}</p>
+      <p>Name: {cat.name}</p>
+      <p>Legs: {cat.legs}</p>
+      <p>Color: {cat.color}</p>
+      <form className="form-view">
+        <input  placeholder={cat.name} onChange={handleChange} />
+        <button className="button-delete-view" onClick={handleDelete}>Delete</button>
         <p>{info}</p>
       </form>
       <Link to={`/updatecat/${id}`}>
-        <p>Update cat</p>
+        <button className="created-button-cat" >Update cat</button>
       </Link>
       <Link to={"/cats"}>
-        <p>Go back</p>
+        <button className="created-button-home">Go back</button>
       </Link>
+      </div>
     </>
   );
 }
