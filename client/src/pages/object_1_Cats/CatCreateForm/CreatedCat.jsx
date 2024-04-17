@@ -5,13 +5,16 @@ export default function CreatedCat() {
 
   return (
     <>
-      <p>Created cat: { id }</p>
-      <Link to={`/cat/${id}`}>
-        <p>View cat</p>
-      </Link>
-      <Link to={"/catpage"}>
-        <p>Go home</p>
-      </Link>
+      <h1 className="created-tittle">Cat created</h1>
+      <p className="created-id">ID: { id }</p>
+      <div className="created-buttons">
+        <Link to={`/cat/${id}`}>
+          <button className="created-button-cat">View cat</button>
+        </Link>
+        <Link to={"/catpage"}>
+          <button className="created-button-home">Go home</button>
+        </Link>
+      </div>
     </>
   );
 }

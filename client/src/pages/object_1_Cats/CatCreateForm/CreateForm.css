@@ -13,9 +13,11 @@
     margin: 2em auto;
     border: 1px solid black;
     padding: 10px;
+    border-radius: 5px;
   }
   
   .input-create {
+    height: 36px;
     width: 300px;
     margin-bottom: 10px;
     padding: 5px;
@@ -35,21 +37,48 @@
     background-color: rgb(27, 180, 180);
     color: white;
     border: 2px solid black;
+    width: 120px;
   }
   
-  .link-go-back {
-    height: 30px;
-    width: 100px;
-    margin-top: 5px;
-    background-color: red;
-    border: 1px solid black;
-    color: White;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 5px;
+  .button-create-back {
+    width: 120px;
+    background-color: rgb(180, 27, 27);
+    color: white;
+    border: 2px solid black;
   }
 
   .link-page {
     display: flex;
     justify-content: center;
+  }
+
+  .created-id {
+    text-align: center;
+    font-size: 19px;
+  }
+
+  .created-tittle {
+    margin-top: 1em;
+  }
+
+  .created-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .created-button-cat {
+    width: 120px;
+    background-color: rgb(27, 180, 180);
+    color: white;
+    border: 2px solid black;
+  }
+
+  .created-button-home{
+    width: 120px;
+    background-color: rgb(180, 27, 27);
+    color: white;
+    border: 2px solid black;
   }

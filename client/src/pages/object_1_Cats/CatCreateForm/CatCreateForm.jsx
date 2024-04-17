@@ -43,9 +43,7 @@ export default function CatCreateForm() {
           </button>
         </form>
         <Link to="/catpage" className="link-page">
-          <div className="link-go-back">
-            <p>Go back</p>
-          </div>
+            <button className="button-create-back">Go back</button>
         </Link>
       </div>
     </>
